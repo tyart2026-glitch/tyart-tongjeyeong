@@ -235,6 +235,13 @@ h3{font-size:clamp(18.5px,4.2vw,23.5px);font-weight:700;letter-spacing:-.025em;l
 .l-ja p{letter-spacing:.01em}
 .l-ja .node .lb{font-size:10px}
 @media (max-width:520px){.l-ja .node .lb{font-size:9px;white-space:normal;text-align:center;width:48px;line-height:1.25}}
+/* Chinese (Simplified, 11/16): 시스템 중국어 글꼴. Pretendard에 한국식 한자 435자가 있어 앞에 두면 글자 모양이 섞이므로 빼고, 한글·로고만 Pretendard */
+.l-zh{--font:"PingFang SC","Hiragino Sans GB","Microsoft YaHei","Noto Sans SC","Noto Sans CJK SC","Source Han Sans SC",system-ui,sans-serif}
+.l-zh,.l-zh *{word-break:normal;line-break:strict;overflow-wrap:anywhere}
+.l-zh [lang=ko],.l-zh .b-ko,.l-zh .home-art b{font-family:"Pretendard Variable",Pretendard,-apple-system,system-ui,sans-serif}
+.l-zh .if-r{grid-template-columns:96px 1fr}
+.l-zh .node .lb{font-size:10px}
+@media (max-width:520px){.l-zh .node .lb{font-size:9px;white-space:normal;text-align:center;width:48px;line-height:1.25}}
 /* 배너: 한글 타이틀 기본, 병기 시 아래에 작게 */
 .banner .b-ko{display:block}
 .banner .b-tr{display:block;margin-top:3px;font-size:10.5px;font-weight:500;letter-spacing:0;line-height:1.35;color:var(--fg-2)}
