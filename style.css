@@ -37,7 +37,12 @@ button{font:inherit;color:inherit}
 /* ---------- top: 배너 + 햄버거 ---------- */
 .topwrap{position:sticky;top:0;z-index:20;background:var(--bg);padding-bottom:12px;box-shadow:0 1px 0 var(--line)}
 .top{display:flex;justify-content:space-between;align-items:center;gap:16px;padding:14px var(--gut) 10px}
-.banner{text-decoration:none;font-weight:800;font-size:clamp(14.5px,3.8vw,18.5px);letter-spacing:-.03em;line-height:1.2}
+.banner{text-decoration:none;font-weight:800;font-size:clamp(12.5px,3.3vw,16.5px);letter-spacing:-.03em;line-height:1.2}
+/* 11/17 상단 타이틀 앞 문화도시통영 로고 */
+.banner.has-logo{display:flex;align-items:center;gap:clamp(8px,2.4vw,12px);min-width:0}
+.bn-logo{display:block;flex:0 0 auto;height:clamp(17px,4.6vw,22px);width:auto;filter:brightness(0) invert(1);opacity:.9}
+.bn-t{min-width:0}
+html[data-theme="light"] .bn-logo{filter:brightness(0);opacity:.88}
 .banner .b1{color:var(--fg)}
 .banner .b2{color:var(--fg)}
 .burger{width:44px;height:44px;border:0;background:none;cursor:pointer;display:flex;flex-direction:column;justify-content:center;align-items:flex-end;gap:6px;padding:0 2px}
